@@ -22,10 +22,46 @@
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+		<form action="" method="post" id="register-form" novalidate="novalidate">
+			<div id="form-content">
+			<fieldset>
+		
+				<div class="fieldgroup">
+					<label for="firstname">First Name</label>
+					<input type="text" name="firstname"/>
+				</div>
+			
+				<div class="fieldgroup">
+					<label for="lastname">Last Name</label>
+					<input type="text" name="lastname"/>
+				</div>
+			
+				<div class="fieldgroup">
+					<label for="email">Email</label>
+					<input type="text" name="email"/>
+				</div>
+			
+				<div class="fieldgroup">
+					<label for="password">Password</label>
+					<input type="password" name="password"/>
+				</div>
+			
+				<div class="fieldgroup">
+					<p> Agree to our terms! </p>
+					<input type="submit" value="Agree and Register" class="submit"/>
+				</div>
+		
+			</fieldset>
+			</div>
+		</form>
+		
+		
+         
+       <script> window.jQuery || document.write ('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"> <\/script>') </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -35,6 +71,6 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        </script> 
     </body>
 </html>
